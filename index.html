@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Santtu Sarlin - Plantiful Portfolio</title>
+	<title>Santtu Sarlin - Tekninen Portfolio - Plantiful</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Santtu Sarlin - Tekninen Portfolio - Plantiful, Ticorporate VI, 2019" />
@@ -26,8 +26,8 @@
 			<header class="special">
 				<h2>Plantiful</h2>
 				<img src="plantiful/icon.png" height="10%" width="10%" />
-				<p>Plantiful on mielialapäiväkirjana toimiva sovellus, jonka käyttöä motivoi kirjausten mukaan kasvava
-					kasvi.</br>
+				<p>Plantiful on mielialapäiväkirjana toimiva sovellus, jonka käyttöä motivoi kirjausten mukaan kasvava kasvi.
+					</br>
 					Sovellus on 12 viikkoa kestäneen Ticorporate VI projektin tuotos.</p>
 				</br>
 				<h2>Hankittu Osaaminen</h2>
@@ -139,24 +139,25 @@
 						</header>
 						<div class="lista">
 							<ul>
+								<li>Projektisuunnitelman laatiminen</li>
+								<li>Esitutkimuksen suorittaminen</li>
 								<li>Tiimityöskentely ohjelmistokehityksessä</li>
 								<li>Pariohjelmointi</li>
 							</ul>
 						</div>
 				</section>
+				</div>
 			</div>
-		</div>
 	</section>
 	<section id="main">
 		<div class="inner">
 			<div class="content" id="koodi">
 				<h3>Johdanto</h3>
-				<p>Projektin aikana suurin osa työajasta meni koodaustehtävien ja projektinhallinnan työtehtävien
-					parissa, mutta muutakin tein. Projektin alussa keskityin Scrumin käytäntöihin syvemmin, sekä
-					perehdyin GITin perusteisiin muistin virikistykseksi ja suunnittelin tiimille sopivan workflown
-					Git-versiohallinnan käyttöä varten. </br>
-					Projektin aikana käytettiin erittäin paljon hyödyksi pari-ohjelmointia joten keskityn tässä
-					raportissa sekä yhdessä tuotettuun koodin että täysin itse implementoimaani koodiin.</p>
+				<p>Projektin aikana suurin osa työajasta meni koodaustehtävien ja projektinhallinnan työtehtävien parissa, mutta muutakin
+					tein. Projektin alussa keskityin Scrumin käytäntöihin syvemmin, sekä perehdyin GITin perusteisiin muistin virikistykseksi
+					ja suunnittelin tiimille sopivan workflown Git-versiohallinnan käyttöä varten. </br>
+					Projektin aikana käytettiin erittäin paljon hyödyksi pari-ohjelmointia joten keskityn tässä raportissa sekä yhdessä tuotettuun
+					koodin että täysin itse implementoimaani koodiin.</p>
 				<h3>Henkilökohtaiset tavoitteet</h3>
 				<div class="lista">
 					<ul>
@@ -178,11 +179,13 @@
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.html</p>
 					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_html.png" />
-					<p class="teksti">Mood- ja aktiviteettien valinnassa käytetään hyväksi NativeScriptin RadListView
-						komponenttia jolla loopataan läpi “moodItems” ja “activityItems” palauttamat arvot. Kuvat
-						saadaan näkyviin
-						viittammalla itemien “.imageURL” avainarvoon. Viimeinen image toimii submit-näppäimenä, jota
-						painaessa kutsutaan submitLog() metodi.</p>
+					<p class="teksti">Mood- ja aktiviteettien valinnassa käytetään hyväksi NativeScriptin
+						<code>RadListView</code>
+						komponenttia jolla loopataan läpi
+						<code>moodItems</code> ja
+						<code>activityItems</code> palauttamat arvot. Kuvat saadaan näkyviin viittammalla itemien
+						<code>.imageURL</code> avainarvoon. Viimeinen image toimii submit-näppäimenä, jota painaessa kutsutaan
+						<code>submitLog()</code> metodi.</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood.service.ts</p>
@@ -192,46 +195,56 @@
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_ngOnInit.png"
-						alt="mood-entry.component.ts - ngOnInit()">
-					<p class="teksti">Kun komponentti initialisoidaan (ngOnInit()) luodaan lokaaleihin muuttujiin uudet
-						ObservableArrayt jotka sisältää activity- ja mood-servicen palauttaman datan.
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_ngOnInit.png" alt="mood-entry.component.ts - ngOnInit()">
+					<p class="teksti">Kun komponentti initialisoidaan (
+						<code>ngOnInit()</code>) luodaan lokaaleihin muuttujiin uudet
+						<code>ObservableArrayt</code> jotka sisältää activity- ja mood-servicen palauttaman datan.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_component_muuttujat.png"
-						alt="mood-entry.component.ts - muuttujat">
-					<p class="teksti">Lokaalit muuttujat joihin luodaan ObservableArrayt ja selectedItemit.
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_component_muuttujat.png" alt="mood-entry.component.ts - muuttujat">
+					<p class="teksti">Lokaalit muuttujat joihin asetetaan
+						<code>selectedItemit</code>, sekä
+						<code>ObservableArrayt</code> joidenka tyypit
+						<code>&lt;Item&gt;</code> ja
+						<code>&lt;Mood&gt;</code> ovat määritettyjä modeleita.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_activity-selection.png"
-						alt="mood-entry.component.ts - activity selection">
-					<p class="teksti">Muuttujaan const selectedItems kutsutaan listview.getSelectedItems(RadListView
-						komponentin oma metodi), joka palauttaa taulukon. SelectedItems pusketaan activityArray
-						taulukkoon joka astetaan private _selectedActivityItems muuttujaan. Valittaessa itemi asetetaan
-						itemin selected avainarvo “true”. ActivityItemDeselected() toimii täysin samalla periaatteella,
-						lopuksi itemin selected arvo muutetaan vain “false”.
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_activity-selection.png" alt="mood-entry.component.ts - activity selection">
+					<p class="teksti">Muuttujaan
+						<code>const selectedItems</code> kutsutaan
+						<code>listview.getSelectedItems</code>( komponenttiluokan oma metodi), joka palauttaa taulukon.
+						<code>SelectedItems</code> pusketaan
+						<code>activityArray</code>
+						taulukkoon joka astetaan
+						<code>private _selectedActivityItems</code> muuttujaan. Valittaessa itemi asetetaan itemin avainarvo
+						<code>selected = true;</code>.
+						<br />
+						<code>ActivityItemDeselected()</code> toimii täysin samalla periaatteella, lopuksi itemin avainarvo vain muutetaan
+						<code>selected = false;</code>.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_mood-selection.png"
-						alt="mood-entry.component.ts - mood selection">
-					<p class="teksti">Moodin valinta toimii täysin samalla periaatteella kun aktiviteettien valinta,
-						erona se että moodeja ei voi valita useaa kerralla joten tarvetta taulukolle ei ole. Kun
-						kutsutaan moodItemDeselected metodia asetetaan this._selectedMoodItem “null”, jolla poistuu
-						deselected moodi valinnasta.
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_mood-selection.png" alt="mood-entry.component.ts - mood selection">
+					<p class="teksti">Moodin valinta toimii täysin samalla periaatteella kun aktiviteettien valinta, erona se että moodeja ei voi valita useaa
+						kerralla joten tarvetta taulukolle ei ole. Kun kutsutaan
+						<code>moodItemDeselected</code> metodia asetetaan
+						<code>this._selectedMoodItem = null;</code>, jolla poistuu deselected moodi valinnasta.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_submit.png"
-						alt="mood-entry.component.ts - moodEntry submit">
-					<p class="teksti">submitLog() funktiolla lähetetään kirjaus tietokantaan, tietokannan collection
-						määritellään 'uuid:n' mukaan, kun kirjaus on suoritettu, sovellus navigoi 'plant'-komponenttiin.
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_submit.png" alt="mood-entry.component.ts - moodEntry submit">
+					<p class="teksti">
+						<code>submitLog()</code> funktiolla lähetetään kirjaus tietokantaan, tietokannan
+						<code>collection</code>
+						määritellään
+						<code>uuid:n</code> mukaan, kun kirjaus on suoritettu, sovellus navigoi
+						<code>["/plant"]</code>-komponenttiin.
 					</p>
 				</div>
 				<h3>Kirjauslista-näkymä (entries.component)</h3>
@@ -239,18 +252,25 @@
 				<div class="koodiblokki">
 					<p class="titteli">entries.component.html</p>
 					<img class="koodi" src="images/koodikuvat/entries/entries_component_html.png" alt="entries.component.html" />
-					<p class="teksti">Komponentissa näytetään kaikki käyttäjän tekemät kirjaukset. RadListViewiin
-						haetaan itemit “entries” muuttujasta. Päivämäärä muutetaan järkevään muotoon hyödyntäen
-						daten-formatointia toLocaleDateString() metodilla. Kaikki kirjauksen aktiviteetit loopataan
-						*ngFor:lla olion activities taulukosta.
+					<p class="teksti">Komponentissa näytetään kaikki käyttäjän tekemät kirjaukset.
+						<code>RadListViewiin</code>
+						haetaan itemit
+						<code>entries</code> muuttujasta. Päivämäärä muutetaan järkevään muotoon hyödyntäen
+						<code>daten</code>-formatointia
+						<code>toLocaleDateString()</code> metodilla. Kaikki kirjauksen aktiviteetit loopataan
+						<code>*ngFor:lla</code> olion
+						<code>activities</code> taulukosta.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">entries.component.ts</p>
 					<img class="koodi" src="images/koodikuvat/entries/entries_component_ts.png" alt="entries.component.ts" />
-					<p class="teksti">getFbEntries() hakee ja palauttaa kaikki käyttäjän tekemät kirjauset oman uuid:n
-						perusteella. Komponenttia initialisoidessa asetetaan this._entries muuttujaan tietokantakutsulla
-						kirjaukset, ja get entries() palauttaa ne Viewiin(entries.component.html).
+					<p class="teksti">
+						<code>getFbEntries()</code> hakee ja palauttaa kaikki käyttäjän tekemät kirjauset oman
+						<code>uuid:n</code>
+						perusteella. Komponenttia initialisoidessa asetetaan
+						<code>this._entries</code> muuttujaan tietokantakutsulla kirjaukset, ja
+						<code>get entries()</code> palauttaa ne templaattiin</code>.
 					</p>
 				</div>
 				<h3>Navbar (navbar.component</h3>
@@ -260,34 +280,48 @@
 					<p class="titteli">navbar.component.html</p>
 					<img class="koodi" src="images/koodikuvat/muut/navbar_html.png" alt="navbar.component.html" />
 					<p class="teksti">Navbar on aktiivisesta reitistä huolimatta aina näkyvissä, se on asetettu
-						routerOutletin kanssa app.componenttiin. NsRouterLinkActivella muokataan Labelille tumma
-						background jotta tietää mikä reitti on valittuna.
+						<code>routerOutletin</code> kanssa
+						<code>app.componenttiin</code>.
+						<code>NsRouterLinkActivella</code> muokataan
+						<code>Labelille</code> tumma background jotta tietää mikä reitti on valittuna.
 					</p>
 				</div>
 				<h3>Google Firebase</h3>
 				<div class="koodiblokki">
 					<img src="images/koodikuvat/tietokanta_kirjaus.png" alt="tietokanta-firebase" />
-					<p>Projektissa autoin myös mallintamaan tietokantaamme, kuvassa kirjauksen tietorakenne.
-						Tietokantaan luodaan jokaiselle käyttäjälle UUID:n perusteella collection, johon luodaan
-						dokumentit kirjauksista. Kirjaus sisältää myös imageURLit kasvin osaa varten sekä mood-iconia
-						varten kirjauslistaan.</p>
+					<p>Projektissa autoin myös mallintamaan tietokantaamme, kuvassa kirjauksen tietorakenne. Tietokantaan luodaan jokaiselle
+						käyttäjälle
+						<code>UUID:n</code> perusteella
+						<code>collection</code>, johon luodaan dokumentit kirjauksista. Kirjaus sisältää myös
+						<code>imageURLit</code> kasvin osaa varten, sekä mood-iconia varten kirjauslistaan.</p>
 				</div>
 				<h3>Versionhallinta - GIT</h3>
 				<div class="koodiblokki">
 					<img src="images/koodikuvat/github_workflow.png" alt="github-forkflow" />
-					<p>Projektin alussa suunnittelin tiimille sopivan workflown GITin käyttöä varten, toimin myös tiimin
-						pääasiallisena GIT tukihenkilönä.</p>
+					<p>Projektin alussa suunnittelin tiimille sopivan workflown GITin käyttöä varten, toimin myös tiimin pääasiallisena GIT
+						tukihenkilönä.</p>
 				</div>
 				<div class="tekstiblokki">
-				<h3>Projektinhallinta</h3>
-				<p>Projektin aikana toimin sivutyönäni tiimin Scrum Masterina. Pidin huolta että Scrumin riittejä noudatetaan sekä johdin ja toimin puheenjohtajana kaikissa Scrum-palavereissa. Tavoitteena oli oppia Scrum Masterina toimimista ja perehtyä Scrum-prosessin toimintaan.</p>
-				<p>Projektin aikana havaitsimme prosessissa paljon haasteita virheitä ja etenkin sprint retrospektiivit auttoi niitä ratkomaan, parhaiten hyvät muutokset meidän tiimissä tuli ilmi planning dayn kohdalla kun saimme kehitettyä taskeja ja sprintin tavoitteita hyvinkin realistisen kokoisiksi, ja taskit pystyttiin hyvin käsittelemään aina daily scrum-palavereissa.</p>
-			</div>
-			<div class="tekstiblokki">
+					<h3>Projektinhallinta</h3>
+					<p>Projektin aikana toimin sivutyönäni tiimin Scrum Masterina. Pidin huolta että Scrumin riittejä noudatetaan sekä johdin
+						ja toimin puheenjohtajana kaikissa Scrum-palavereissa. Tavoitteena oli oppia Scrum Masterina toimimista ja perehtyä
+						Scrum-prosessin toimintaan.</p>
+					<p>Projektin aikana havaitsimme prosessissa paljon haasteita virheitä ja etenkin sprint retrospektiivit auttoi niitä ratkomaan,
+						parhaiten hyvät muutokset meidän tiimissä tuli ilmi planning dayn kohdalla kun saimme kehitettyä taskeja ja sprintin
+						tavoitteita hyvinkin realistisen kokoisiksi työmääriltään. Taskit pystyttiin hyvin käsittelemään aina daily scrum-palavereissa.</p>
+				</div>
+				<div class="tekstiblokki">
 					<h3>Reflektointi</h3>
-					<p>Koen tämän projektin kehittäneen projektityöskentely- sekä ohjelmointi-taitojani melko paljon. Tekninen osaaminen ja itsevarmuus koodin tuottamiseen on kasvanut. NativeScriptin antamat mahdollisuudet ovat myös selkistyneet, tietoa käytettävistä komponentaista sekä plugineista on kertynyt paljon. </p>
-					<p>Paljon joutuu edelleen turvautumaan tutoriaaleihin ja niiden soveltamiseen, sekä googleen, mutta soveltaminen käy luontevammin kuin projektia aloittaessa. Asioita osaa myös miettiä laajemmin eri näkökulmista.</p>
-					<p>Voisin ehkä sanoa että eniten olen saanut tästä projektista irti projektinhallintaan liittyvistä työtehtävistä eli Scrum Masterina toimimesta.</p>
+					<p>Koen tämän projektin kehittäneen projektityöskentely- sekä ohjelmointi-taitojani melko paljon. Tekninen osaaminen ja
+						itsevarmuus koodin tuottamiseen on kasvanut. NativeScriptin antamat mahdollisuudet ovat myös selkistyneet, tietoa käytettävistä
+						komponentaista sekä plugineista on kertynyt paljon. </p>
+					<p>Paljon joutuu edelleen turvautumaan tutoriaaleihin ja niiden soveltamiseen, sekä googleen, mutta soveltaminen käy luontevammin
+						kuin projektia aloittaessa. Asioita osaa myös miettiä laajemmin eri näkökulmista.</p>
+					<p>Tämä projekti oli itselle ensimmäinen kosketus mobiilisovellusten kehitykseen, ja kyseinen aihealue kiinnosti itseä
+						hyvin paljon joka auttoi pitämään opiskelumotivaatiota yllä koko projektin ajan. Olen siis oppinut paljon mobiilikehityksestä.</p>
+					<p>Voisin ehkä sanoa että eniten olen saanut tästä projektista irti projektinhallintaan liittyvistä työtehtävistä eli Scrum
+						Masterina toimimesta. Scrumin hyödyt huomasi projektin aikana ja loputtua hyvin, jatkuva prosessin kehitys auttoi tiimiämme
+						paljon.</p>
 				</div>
 			</div>
 		</div>
@@ -298,7 +332,7 @@
 		<div class="inner">
 			<div class="copyright">
 				&copy; Santtu Sarlin 2019 - Template by Untitled
-		</div>
+			</div>
 	</footer>
 
 	<!-- Scripts -->
