@@ -147,7 +147,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="main" class="wrapper">
+	<section id="main">
 		<div class="inner">
 			<div class="content" id="koodi">
 				<h3>Johdanto</h3>
@@ -186,13 +186,13 @@
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood.service.ts</p>
-					<img src="images/koodikuvat/mood_entry/mood_service.png" alt="mood.service.ts">
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood_service.png" alt="mood.service.ts">
 					<p class="teksti">Moodit sekä aktiviteetit palautetaan omista serviceistä jonne ne on kovakoodattu.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img src="images/koodikuvat/mood_entry/mood-entry_ngOnInit.png"
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_ngOnInit.png"
 						alt="mood-entry.component.ts - ngOnInit()">
 					<p class="teksti">Kun komponentti initialisoidaan (ngOnInit()) luodaan lokaaleihin muuttujiin uudet
 						ObservableArrayt jotka sisältää activity- ja mood-servicen palauttaman datan.
@@ -200,14 +200,14 @@
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img src="images/koodikuvat/mood_entry/mood-entry_component_muuttujat.png"
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_component_muuttujat.png"
 						alt="mood-entry.component.ts - muuttujat">
 					<p class="teksti">Lokaalit muuttujat joihin luodaan ObservableArrayt ja selectedItemit.
 					</p>
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img src="images/koodikuvat/mood_entry/mood-entry_activity-selection.png"
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_activity-selection.png"
 						alt="mood-entry.component.ts - activity selection">
 					<p class="teksti">Muuttujaan const selectedItems kutsutaan listview.getSelectedItems(RadListView
 						komponentin oma metodi), joka palauttaa taulukon. SelectedItems pusketaan activityArray
@@ -218,7 +218,7 @@
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img src="images/koodikuvat/mood_entry/mood-entry_mood-selection.png"
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_mood-selection.png"
 						alt="mood-entry.component.ts - mood selection">
 					<p class="teksti">Moodin valinta toimii täysin samalla periaatteella kun aktiviteettien valinta,
 						erona se että moodeja ei voi valita useaa kerralla joten tarvetta taulukolle ei ole. Kun
@@ -228,7 +228,7 @@
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">mood-entry.component.ts</p>
-					<img src="images/koodikuvat/mood_entry/mood-entry_submit.png"
+					<img class="koodi" src="images/koodikuvat/mood_entry/mood-entry_submit.png"
 						alt="mood-entry.component.ts - moodEntry submit">
 					<p class="teksti">submitLog() funktiolla lähetetään kirjaus tietokantaan, tietokannan collection
 						määritellään 'uuid:n' mukaan, kun kirjaus on suoritettu, sovellus navigoi 'plant'-komponenttiin.
@@ -238,7 +238,7 @@
 				<img class="sovellus" src="images/entries-list-plantiful.jpg" alt="entries-list" />
 				<div class="koodiblokki">
 					<p class="titteli">entries.component.html</p>
-					<img src="images/koodikuvat/entries/entries_component_html.png" alt="entries.component.html" />
+					<img class="koodi" src="images/koodikuvat/entries/entries_component_html.png" alt="entries.component.html" />
 					<p class="teksti">Komponentissa näytetään kaikki käyttäjän tekemät kirjaukset. RadListViewiin
 						haetaan itemit “entries” muuttujasta. Päivämäärä muutetaan järkevään muotoon hyödyntäen
 						daten-formatointia toLocaleDateString() metodilla. Kaikki kirjauksen aktiviteetit loopataan
@@ -247,7 +247,7 @@
 				</div>
 				<div class="koodiblokki">
 					<p class="titteli">entries.component.ts</p>
-					<img src="images/koodikuvat/entries/entries_component_ts.png" alt="entries.component.ts" />
+					<img class="koodi" src="images/koodikuvat/entries/entries_component_ts.png" alt="entries.component.ts" />
 					<p class="teksti">getFbEntries() hakee ja palauttaa kaikki käyttäjän tekemät kirjauset oman uuid:n
 						perusteella. Komponenttia initialisoidessa asetetaan this._entries muuttujaan tietokantakutsulla
 						kirjaukset, ja get entries() palauttaa ne Viewiin(entries.component.html).
@@ -256,9 +256,9 @@
 				<h3>Navbar (navbar.component</h3>
 				<div class="koodiblokki">
 					<p class="titteli2">app.component.html</p>
-					<img src="images/koodikuvat/muut/navbar-app.png" alt="app.component.html - navbar" />
+					<img class="koodi" src="images/koodikuvat/muut/navbar-app.png" alt="app.component.html - navbar" />
 					<p class="titteli">navbar.component.html</p>
-					<img src="images/koodikuvat/muut/navbar_html.png" alt="navbar.component.html" />
+					<img class="koodi" src="images/koodikuvat/muut/navbar_html.png" alt="navbar.component.html" />
 					<p class="teksti">Navbar on aktiivisesta reitistä huolimatta aina näkyvissä, se on asetettu
 						routerOutletin kanssa app.componenttiin. NsRouterLinkActivella muokataan Labelille tumma
 						background jotta tietää mikä reitti on valittuna.
@@ -297,7 +297,7 @@
 	<footer id="footer">
 		<div class="inner">
 			<div class="copyright">
-				&copy; Santtu Sarlin 2019
+				&copy; Santtu Sarlin 2019 - Template by Untitled
 		</div>
 	</footer>
 
