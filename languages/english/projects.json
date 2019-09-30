@@ -1,0 +1,30 @@
+{
+    "projects": [
+        {
+            "title": "Plantiful",
+            "tags": [
+                "NativeScript",
+                "Angular",
+                "Google Firebase"
+            ],
+            "description": "As part of my minor I made a real-time strategy game with two fellow students. This game features artificial intelligence and procedural map generation that creates different kinds of biomes.",
+            "links": {
+                "github": "#"
+            },
+            "image": "#.png"
+        },
+        {
+            "title": "MEAN - REST Api App",
+            "tags": [
+                "Angular",
+                "Node.js + Express",
+                "MongoDB"
+            ],
+            "description": "This is a hobby project I made, because I couldn't find a good music player that fit my needs. It's made with the Universal Apps for Windows platform.",
+            "links": {
+                "github": "#"
+            },
+            "image": "#"
+        }
+    ]
+}
