@@ -1,0 +1,20 @@
+{
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "contact": "Contact",
+    "phone": "Phone",
+    "me": [
+        "",
+        "",
+        ""
+    ],
+    "education": [
+        "",
+        ""
+    ],
+    "social": "Social Media",
+    "mail": "Mail",
+    "message": "Message",
+    "messagePlaceholder": "Type a message...",
+    "senderPlaceholder": "Sender..."
+}
