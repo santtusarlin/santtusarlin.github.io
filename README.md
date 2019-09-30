@@ -1,1 +1,0 @@
-# Santtu Sarlin Portfolio
